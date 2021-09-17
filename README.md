@@ -10,4 +10,4 @@
 * Learned about common security principles of encryption algorithms
 * Learned step-by-step how DES operates
 
-This project was created to learn about process not secuirty so this code is most likely not safe for any real use
+This project was created to learn about process not secuirty
