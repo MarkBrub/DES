@@ -26,13 +26,14 @@ void printBlock(std::vector<std::vector<unsigned char>>& block) {
 
 void printBlock(std::vector<unsigned char>& block) {
 	for (int x = 0; x < block.size(); x++) {
-		std::cout << "(" << binarize(block[x]) << "," << block[x] << ")" << std::endl;
+		printBlock(block[x]);
 	}
 	std::cout << std::endl;
 }
 
 void printBlock(unsigned char& block) {
-	std::cout << "(" << binarize(block) << "," << block << ")" << std::endl;
+	//std::cout << "(" << binarize(block) << "," << block << ")" << std::endl;
+	std::cout << binarize(block) << ' ';
 }
 
 void printKey(std::vector<unsigned char>& key) { //Make it so that it finds out where it is being called based on the length and print in the right format and combine with printBlock
